@@ -1,3 +1,4 @@
+import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/navbar";
 
@@ -7,6 +8,7 @@ export default function Home() {
     <div className="bg-neutral-950">
      <Navbar />
      <Hero/>
+     <Features/>
    
      
    

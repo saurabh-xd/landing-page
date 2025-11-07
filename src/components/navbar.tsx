@@ -5,7 +5,7 @@ import React from 'react'
 const Navbar = () => {
 
   const links = [
-  { href: '/features', title: 'Features' },
+  { href: '#features', title: 'Features' },
   { href: '/pricing', title: 'Pricing' },
   { href: '/Testimonials', title: 'Testimonials' },
   { href: '/About', title: 'About' }
