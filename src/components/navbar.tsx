@@ -8,7 +8,7 @@ const Navbar = () => {
   { href: '#features', title: 'Features' },
   { href: '#pricing', title: 'Pricing' },
   { href: '#Testimonials', title: 'Testimonials' },
-  { href: '#About', title: 'About' }
+
 ];
   return (
     <div className='flex  items-center  justify-between py-3 px-4 border-b border-neutral-900'>
@@ -18,7 +18,7 @@ const Navbar = () => {
                 WriteWise</h1>
             </Link>
 
-            <div className='flex gap-8 items-center justify-center  font-semibold'>
+            <div className='flex space-x-16 items-center justify-center  font-semibold'>
                  {
                   links.map((link,key)=>(
                     <Link key={key} href={link.href} className='text-lg text-neutral-400 hover:text-neutral-200 transition-colors duration-200'> {link.title}</Link>

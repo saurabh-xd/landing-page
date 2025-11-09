@@ -42,10 +42,10 @@ function Features() {
        <p className='max-w-2xl font-semibold text-neutral-400 text-lg'> WriteWise combines intelligence, creativity, and simplicity — giving you the tools to write faster and smarter than ever before.</p>
        </div>
 
-       <div className='grid grid-cols-3 gap-3'>
+       <div className='grid grid-cols-3 gap-5'>
          {
             features.map((item,index)=>(
-                <div key={index} className={`border border-neutral-800  rounded-md p-8 flex bg-neutral-900 flex-col justify-center gap-4 ${item.span || ""}`}>
+                <div key={index} className={`border border-neutral-800  rounded-lg p-8 flex bg-neutral-900 flex-col justify-center gap-4 ${item.span || ""}`}>
                     <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-linear-to-br from-teal-500/10 to-green-500/10 border border-teal-600/20">
   <item.icon className="text-teal-400 size-6" />
 </div>
