@@ -39,10 +39,10 @@ function Features() {
     <div id='features' className='max-w-7xl mx-auto min-h-screen text-neutral-100 flex flex-col items-center  justify-center py-20'>
         <div className='text-center flex flex-col gap-4 mb-12'>
        <h2 className='font-bold text-4xl'>Write Smarter with AI     </h2>
-       <p className='max-w-2xl font-semibold text-neutral-400 text-lg'> WriteWise combines intelligence, creativity, and simplicity — giving you the tools to write faster and smarter than ever before.</p>
+       <p className='max-w-2xl font-semibold text-neutral-400 text-lg'> TypeZen combines intelligence, creativity, and simplicity — giving you the tools to write faster and smarter than ever before.</p>
        </div>
 
-       <div className='grid grid-cols-3 gap-5'>
+       <div className='grid grid-cols-3 gap-4'>
          {
             features.map((item,index)=>(
                 <div key={index} className={`border border-neutral-800  rounded-lg p-8 flex bg-neutral-900 flex-col justify-center gap-4 ${item.span || ""}`}>

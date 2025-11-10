@@ -15,7 +15,7 @@ export default function Home() {
      <Features/>
      <Testimonials/>
      <Pricing/>
-    <Footer/>
+     <Footer/>
    
      
    

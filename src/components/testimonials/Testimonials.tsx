@@ -6,42 +6,42 @@ export const testimonials = [
     name: "Emily Johnson",
     role: "Content Marketer at Growthify",
     feedback:
-      "WriteWise has completely transformed how I create blogs and newsletters. What used to take me hours now takes just minutes — and the tone always fits perfectly.",
+      "TypeZen has completely transformed how I create blogs and newsletters. What used to take me hours now takes just minutes — and the tone always fits perfectly.",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
     name: "Michael Brown",
     role: "Freelance Copywriter",
     feedback:
-      "I've tried multiple AI tools, but none feel as natural as WriteWise. It understands context and brand voice so well — it’s like having a creative partner 24/7.",
+      "I've tried multiple AI tools, but none feel as natural as TypeZen. It understands context and brand voice so well — it’s like having a creative partner 24/7.",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     name: "Olivia Smith",
     role: "Startup Founder, MindCraft",
     feedback:
-      "The AI’s ability to draft emails, social posts, and even landing copy saves our team so much time. WriteWise feels like an extra content strategist on board.",
+      "The AI’s ability to draft emails, social posts, and even landing copy saves our team so much time. TypeZen feels like an extra content strategist on board.",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
   },
   {
     name: "Ethan Davis",
     role: "Student & Blogger",
     feedback:
-      "As a student who writes blogs and essays, WriteWise helps me sound professional and confident. The AI-generated suggestions are surprisingly accurate and easy to refine.",
+      "As a student who writes blogs and essays, TypeZen helps me sound professional and confident. The AI-generated suggestions are surprisingly accurate and easy to refine.",
     image: "https://randomuser.me/api/portraits/men/45.jpg",
   },
   {
     name: "Sophia Miller",
     role: "Social Media Manager at Trendify",
     feedback:
-      "Scheduling posts and writing captions used to be chaos. Now, I just enter my topic, and WriteWise generates perfect, catchy lines every single time. It’s a game changer.",
+      "Scheduling posts and writing captions used to be chaos. Now, I just enter my topic, and TypeZen generates perfect, catchy lines every single time. It’s a game changer.",
     image: "https://randomuser.me/api/portraits/women/24.jpg",
   },
   {
     name: "James Wilson",
     role: "Tech Blogger & YouTuber",
     feedback:
-      "I use WriteWise for video descriptions, blog intros, and newsletter content. It keeps everything engaging and consistent with my personal style — I’m seriously impressed.",
+      "I use TypeZen for video descriptions, blog intros, and newsletter content. It keeps everything engaging and consistent with my personal style — I’m seriously impressed.",
     image: "https://randomuser.me/api/portraits/men/60.jpg",
   },
 ];
@@ -55,7 +55,7 @@ const bottomRow = testimonials.slice(3, 6);
     <section id="Testimonials" className="max-w-8xl mx-auto py-24 px-6 text-neutral-100 flex flex-col justify-center items-center">
 
        <div>
-        <h2 className="font-bold text-neutral-100 mb-12 text-5xl max-w-2xl text-center"> See how <span className="text-primary">WriteWise</span> helps creators shine</h2>
+        <h2 className="font-bold text-neutral-100 mb-12 text-5xl max-w-2xl text-center"> See how <span className="text-primary">TypeZen</span> helps creators shine</h2>
        </div>
 
 
