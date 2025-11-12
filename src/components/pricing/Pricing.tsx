@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import { motion } from 'motion/react';
 import PricingCard from './PricingCard';
 
 import {
@@ -58,11 +59,17 @@ export const plans = [
 function Pricing() {
   return (
     <section id='pricing' className='container mx-auto  flex flex-col justify-center items-center min-h-screen'>
-    <div className='text-center mb-12'>
+    <motion.div
+    initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, }}
+          viewport={{ once: true }}
+    
+    className='text-center mb-12'>
 <h2 className='text-neutral-50 font-bold text-6xl mb-4'>Pricing</h2>
 <p className='text-neutral-400  text-xl'> Get started with the plan that suits your needs</p>
 
-    </div>
+    </motion.div>
 
     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch px-6'>
             {plans.map((item,index)=>(

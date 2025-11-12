@@ -1,5 +1,6 @@
-import React from "react";
+"use client"
 import TestimonialCard from "./Testimonial-card";
+import { motion } from "motion/react";
 
 export const testimonials = [
   {
@@ -52,11 +53,16 @@ function Testimonials() {
     const topRow = testimonials.slice(0, 3);
 const bottomRow = testimonials.slice(3, 6);
   return (
-    <section id="Testimonials" className="max-w-8xl mx-auto py-24 px-6 text-neutral-100 flex flex-col justify-center items-center">
+    <section id="Testimonials" className="max-w-8xl mx-auto py-24 px-6 text-neutral-100 flex flex-col justify-center items-center ">
 
-       <div>
+       <motion.div
+       initial={{opacity: 0, y: 20}}
+       whileInView={{opacity: 1, y: 0}}
+       transition={{ duration: 0.6, delay: 0.1 }}
+       viewport={{once: true}}
+       >
         <h2 className="font-bold text-neutral-100 mb-12 text-5xl max-w-2xl text-center"> See how <span className="text-primary">TypeZen</span> helps creators shine</h2>
-       </div>
+       </motion.div>
 
 
                {/* marquee */}

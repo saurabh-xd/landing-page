@@ -1,4 +1,5 @@
-import { Check } from 'lucide-react'
+"use client"
+import { motion } from 'motion/react';
 import React from 'react'
 
 interface Feature {
@@ -15,7 +16,12 @@ interface Plan {
 
 function PricingCard({item}: {item: Plan}) {
   return (
-    <div className={`relative max-w-2xl p-8 h-full min-h-[420px] flex flex-col justify-between  rounded-lg 
+    <motion.div
+     initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      viewport={{once: true}}
+    className={`relative max-w-2xl p-8 h-full min-h-[420px] flex flex-col justify-between  rounded-lg 
      ${item.popular? 'bg-teal-900/20 border-2 border-teal-500/50 shadow-teal-500/20 shadow-lg': 'bg-neutral-950 border border-neutral-800'}`}>
 
 
@@ -41,9 +47,9 @@ function PricingCard({item}: {item: Plan}) {
             ))}
          </ul>
 
-         <button className={`px-6 py-2 rounded-lg w-full font-medium transition-all duration-300 cursor-pointer  ${item.popular? 'bg-primary hover:bg-primary/90 text-neutral-900 ':'bg-neutral-800 hover:bg-neutral-700 border border-neutral-700 text-neutral-200'}`}>Get Started</button>
-    </div>
+         <button className={`px-6 py-2 rounded-lg w-full font-medium transition-all duration-300 cursor-pointer  ${item.popular? 'bg-primary hover:bg-primary/90 text-neutral-900 ':'bg-neutral-900 hover:bg-neutral-700 border border-neutral-700 text-neutral-200'}`}>Get Started</button>
+    </motion.div>
   )
 }
 
-export default PricingCard
+export default PricingCard 

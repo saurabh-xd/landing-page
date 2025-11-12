@@ -1,6 +1,7 @@
 "use client"
 import { Sparkles } from 'lucide-react'
 import { motion } from 'motion/react'
+import { BackgroundBeams } from './ui/background-beams'
 
 
 const heroVariants = {
@@ -9,9 +10,10 @@ const heroVariants = {
 }
 function Hero() {
   return (
-    <div className=' max-w-7xl mx-auto flex items-center justify-center flex-col min-h-screen gap-6'>
+    <div className='relative max-w-7xl mx-auto flex items-center justify-center flex-col min-h-screen gap-6'>
 
       
+<div className='relative z-10 flex items-center justify-center flex-col gap-6'>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -60,6 +62,9 @@ function Hero() {
           Join the Waitlist</button>
        </motion.div>
        
+       </div>
+
+       <BackgroundBeams />
     </div>
   )
 }

@@ -4,7 +4,7 @@ import React from 'react'
 function TestimonialCard({item}: any) {
   return (
    
-        <div  className="flex flex-col shrink-0 w-sm gap-10 bg-neutral-900 border border-neutral-900 justify-center p-8 rounded-lg ">
+        <div  className="flex flex-col h-64 shrink-0 w-sm gap-10 bg-neutral-900 border border-neutral-800 justify-center p-8 rounded-lg ">
                 <p>{item.feedback}</p>
                 <div className="flex gap-2 items-center">
 
